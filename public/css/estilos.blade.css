@@ -1,0 +1,14 @@
+body{
+    align-items: center;
+}
+.carousel-image {
+    max-height: 300px; /* Define la altura máxima de las imágenes */
+    max-width: 30%;
+    width: auto; /* Hace que el ancho se ajuste automáticamente para mantener la proporción de aspecto */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+  }
+
+  .Comprar{
+    align-items: center;
+  }
+  
