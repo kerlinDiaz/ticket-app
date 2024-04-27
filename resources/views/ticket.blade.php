@@ -41,9 +41,9 @@
 
     </section>
 
-    <section id="Comprar" style="display: flex; flex-direction: column;">
+    <section id="Comprar" style="display: flex; flex-direction: column; align-items: center;">
     <h2>Compra tu Ticket</h2>
-    <form action="procesar_pago.php" method="post" style="display: flex; flex-direction: column;">
+    <form action="procesar_pago.php" method="post" style="display: flex; flex-direction: column; align-items: center;">
         
         <label for="nombre_cliente" style="width: 200px;">Nombre del cliente:</label>
         <input type="text" id="nombre_cliente" name="nombre_cliente" style="width: 300px;" required><br>
@@ -56,41 +56,34 @@
         
         <label for="entrega" style="width: 200px;">Lugar de Entrega:</label>
         <select id="entrega" name="entrega" style="width: 300px;" required>
+            <option value="...">...</option>
             <option value="delivery">Delivery</option>
             <option value="lugar_parrillada">Lugar de Parrillada</option>
         </select><br>
         
         <label for="parte" style="width: 200px;">Parte de la parrillada:</label>
         <select id="parte" name="parte" style="width: 300px;" required>
+            <option value="...">...</option>
             <option value="pecho">Pecho</option>
             <option value="pierna">Pierna</option>
         </select><br>
         
         <label for="cantidad_tickets" style="width: 200px;">Cantidad de Tickets:</label>
-        <input type="number" id="cantidad_tickets" name="cantidad_tickets" style="width: 300px;" min="1" required>
+        <input type="number" id="cantidad_tickets" name="cantidad_tickets" style="width: 300px;" min="1" required><br>
+
+        <label for="metodo_pago" style="width: 200px;">Método de pago:</label>
+        <select id="metodo_pago" name="metodo_pago" style="width: 300px;" required>
+            <option value="...">...</option>
+            <option value="tarjeta">Tarjeta</option>
+            <option value="efectivo">Efectivo</option>
+            <option value="plin">Plin</option>
+            <option value="yape">Yape</option>
+        </select><br>
         
-        <br><button type="submit" style="width: 150px;">Comprar ahora</button>
+        <button type="submit" style="width: 150px;">Comprar ahora</button>
     </form>
 </section>
 
-    <!-- Footer -->
-    <footer id="contacto">
-        <div class="contactos">
-            <h2>Contactos</h2>
-            <ul>
-                <li><img src="img/img7.png"> Email: info@parrillada.com</li>
-                <li><img src="img/img8.png"> Teléfono: +51 945281624</li>
-                <li><img src="img/img9.png"> Whatsapp: +51 965724576</li>
-            </ul>
-        </div>
-        <div class="pagos">
-            <h2>Método de pagos</h2>
-            <ul>
-                <li><img src="img/yape.png" width="100" height="40"> YAPE: 965724576</li>
-                <li><img src="img/plin.png" width="100" height="40"> PLIN: 976935273</li>
-            </ul>
-        </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

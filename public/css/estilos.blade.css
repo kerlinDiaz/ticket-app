@@ -1,5 +1,6 @@
 body{
     align-items: center;
+    background-color: antiquewhite;
 }
 .carousel-image {
     max-height: 300px; /* Define la altura máxima de las imágenes */
