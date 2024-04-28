@@ -1,15 +1,34 @@
 body{
-    align-items: center;
-    background-color: antiquewhite;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
 }
-.carousel-image {
-    max-height: 300px; /* Define la altura máxima de las imágenes */
-    max-width: 30%;
-    width: auto; /* Hace que el ancho se ajuste automáticamente para mantener la proporción de aspecto */
-    margin: 0 auto; /* Centra las imágenes horizontalmente */
-  }
-
-  .Comprar{
-    align-items: center;
-  }
-  
+footer{
+  padding: 1vh 1vw;
+  text-align: center;
+  font-size: 0.9em;
+}
+#pie div{
+  width: 100%;
+  padding: 10px;
+  margin: 25px;
+}
+#pie{
+  display: flex;
+  flex-direction: row;
+}
+.container{
+  width: 400px;
+}
+.containerr{
+  display:contents;
+}
+#imgprincipal{
+  display:contents;
+  width: 90%;
+  text-align:center;
+}
+#imgprincipal div{
+  margin: 35px 60px;
+}
